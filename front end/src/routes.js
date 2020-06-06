@@ -5,6 +5,7 @@ import Logon from './pages/Logon'
 import Register from './pages/Register'
 import Profile from './pages/Profile'
 import NewIncident from './pages/NewIncident'
+import Cadastro from './pages/cadastro'
 
 export default function Routes(){
     return(
@@ -19,7 +20,7 @@ export default function Routes(){
 
             <Route path="/incidents/new" component={NewIncident} />
 
-
+            <Route path="/cadastro" component={Cadastro} />
             
         </Switch>
 

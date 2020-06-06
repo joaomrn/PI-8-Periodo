@@ -30,7 +30,7 @@ export default function Logon() {
             history.push('/profile');
 
         }catch(err) {
-            alert('Falha no login, por favor tente novamente');
+            alert('FNão foi encontrado cadastro. Por favor se cadastre!');
 
         }
 
@@ -48,6 +48,11 @@ export default function Logon() {
                      onChange={ e => setId(e.target.value)}
                      />
                     <button className ="button"type="submit">Entrar</button>
+
+                    <Link className="back-link" to="/cadastro">
+                        <FiLogIn size={16} color="E02041" />
+                        Sou autonomo
+                    </Link>
 
                     <Link className="back-link" to="/register">
                         <FiLogIn size={16} color="E02041" />

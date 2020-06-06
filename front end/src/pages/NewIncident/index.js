@@ -51,18 +51,18 @@ export default function NewIncident (){
             <section>
                 <img src={logoImg} alt="Be the Hero"/>
                 <h1>Cadastrar novo caso</h1>
-                <p>Descreva o caso detadalhamente para encontrar um herói para resolvê-lo</p>
+                <p>Descreva a solicitação detadalhamente para encontrar um herói para resolvê-lo</p>
 
                 <Link className="back-link" to="/Profile">
                     <FiArrowLeft size={16} color="E02041" />
-                    Voltar para à página de casos
+                    Voltar para à página de solicitações
                 </Link>
 
             </section>
 
             <form onSubmit={handleNewIncident}>
                 <input  
-                    placeholder="Título do caso" 
+                    placeholder="Título da solicitação" 
                     value={title}
                     onChange={e => setTitle(e.target.value)}
                 />
@@ -72,7 +72,7 @@ export default function NewIncident (){
                     onChange={e => setDescription(e.target.value)}
                 />
                 <input      
-                    placeholder="Valor em reais"
+                    placeholder="Valor do pagamento ou um agradecimento"
                     value={value}
                     onChange={e => setValue(e.target.value)}
                 />
